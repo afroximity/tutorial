@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<title>Selamlar Olsun</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <h1>Welcome to the farm</h1>
+  <div class="center">
+      <p>This farm is full of cute animals.</p>
+      <p>However, winter is coming. If you want to survive, you have to make sacrifices. </p>
+  </div>
+
+  <h2>Your stock: <span id="meatcount"></span></h2>
+  <h2 id="warning"></h2>
+
+  <div>
+    <p>You have exactly <span id="pigcount"></span> pigs. Do you want to kill one of them?</p>
+    <button onclick="slaughter('hello')">Kill a pig!</button>
+  </div>
+
+  <table style="margin: auto;">
+      <thead>
+          <tr>
+              <th>List of puppies:</th>
+              <th>Delete</th>
+          </tr>
+      </thead>
+      <tbody id="puppylist">
+          <tr id="1">
+              <td id="t1" onclick="strikeText('t1')">Jessie</td>
+              <td><input type="button" value="X" onclick="deleteRow(1)"></td>
+          </tr>
+      </tbody>
+  </table>
+  <div id="tableinput">
+    <form>
+    <input id="listinput" type="text" style="width: 100px;"><input type="button" onclick="addToList()" value="Add" style="width: 40px;">
+    <p id="warn" class="invisible">You must type something into the box above!</p>
+  </div>
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
