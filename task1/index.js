@@ -42,16 +42,12 @@ const addToList=()=> {
         let buttonElement = '<input type="button" value="X" onclick="deleteRow('+count+')"> </input>'
         let chartButtonCell = chartNewRow.insertCell()
         chartButtonCell.innerHTML += buttonElement
-        // strikability = '<span class="strike></span>"'
         chartNewRow.id = count
         chartNewCell.id = "t" + count
         chartNewCell.setAttribute("onclick", "strikeText('t"+count+"')")
         console.log('newCellText: ', newCellText)
         let newText = document.createTextNode(newCellText);
         chartNewCell.appendChild(newText);
-        // chartNewCell.setAttribute("class", "strike")
-        // chartNewCell.innerHTML += strikability
-        // chartButtonCell.append('');
         count++
         chartWarning.setAttribute('class', 'invisible');
 
@@ -66,10 +62,7 @@ const deleteRow = (rowId) => {
 }
 
 const strikeText = (textId) => {
-  //textid = t6
-  //textid2 = <TD id="t6">asadas</td>
   const textId2 = document.getElementById(textId);
-  // textId2.className = "strike"
   if (textId2.className === "strike") {
     textId2.className = ""
   } else {
