@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Butoncuk from './Butoncuk';
+import ToDoList from './ToDoList';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Butoncuk />
+    {/* <ToDoList /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

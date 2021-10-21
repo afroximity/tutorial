@@ -2,7 +2,7 @@ import React from "react";
 import './Butoncuk.css';
 
 class Butoncuk extends React.Component {
-    constructor(props) {
+      constructor(props) {
       super(props);
       this.state = {
         count: 0,
